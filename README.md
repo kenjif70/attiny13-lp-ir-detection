@@ -5,7 +5,7 @@ This code uses a watchdog timer to detect IR signal periodically and lets ATtiny
 And by powering an IR receiver by PB4 of ATtiny13, the receiver also wakes up periodically so that it won't consume power most of the time.
 
 This code can be compiled and flashed with https://github.com/MCUdude/MicroCore. The following settings are recommended to make its power consumption even lower.
-* Clock 1MHz (or 128kHz, which requires one line change in Arduino ISP code)
+* Clock 600kHz (128kHz is fine too, but you'd need to modify SPI_CLOCK of ArduinoISP to reprogram)
 * BOD disabled
 
 Pins to be used:
